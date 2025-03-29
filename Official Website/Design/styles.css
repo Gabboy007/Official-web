@@ -1,0 +1,374 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar {
+    min-height: 50px; /* Adjust height */
+    padding: 1px ;  /* Adjust vertical spacing */
+    background: #1F3B63;   
+
+}
+.nav-link {
+    font-size: 1.2rem; /* Increase font size */
+    padding: 15px 20px; /* Increase clickable area */
+    color: white; /* Default text color */
+    transition: color 0.3s ease-in-out;
+}
+.nav-link:hover {
+    color: #C59D3B; /* Gold on hover */ 
+}
+
+
+
+.logo {
+     position: sticky   ;
+        width: 8em;
+        height: auto; /* Allow the image to scale properly */
+        z-index: 1;
+}
+
+.logo .wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    border-radius: 100%;
+    background-color:#1F3B63 ;
+}
+
+.logo img {
+    width: 100%;
+    padding: 0.1em;
+    
+}
+
+
+
+
+
+
+.hero-image {
+    position: relative;
+    height: 65vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image Styling */
+.hero-bg {
+    width: 110%; /* Slight zoom out */
+    height: 100%;
+    object-fit: cover;
+    object-position: center 15%; /* Move down slightly */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+/* Gradient Overlay */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); /* Dark gradient overlay */
+    z-index: -1;
+}
+
+/* Centered Text */
+.hero-text {
+    text-align: center;
+    color: white;
+    position: relative; /* Keeps text above the overlay */
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+  
+
+    
+.trailer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Better spacing */
+    padding: 50px;
+    background-color: #1F3B63;
+    color: white;
+    text-align: center;
+}
+
+/* Card Styling */
+.trailer-item {
+    flex: 1 1 calc(25% - 20px); /* Responsive: 4 items per row */
+    max-width: 22%; /* Prevents it from becoming too large */
+    padding: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 3px solid #FFD700; /* Gold Outline */
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out, outline 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.trailer-item:hover {
+    color: white;
+    background-color: #B8860B;
+    transform: translateY(-5px); /* Subtle lift effect */
+    border-color: #1F3B63; /* Brighter Gold Border */
+}
+
+/* Ensure text remains visible */
+.trailer-item h2,
+.trailer-item p {
+    margin: 5px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .trailer-item {
+        flex: 1 1 calc(45% - 20px); /* 2 items per row on tablets */
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    .trailer-item {
+        flex: 1 1 100%; /* 1 item per row on small screens */
+        max-width: 100%;
+    }
+}
+
+
+.card-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Card Styling */
+.card {
+    width: 23%; /* 4 cards in a row */
+    border-radius: 15px;
+    overflow: hidden;
+    background: #1F3B63; /* Dark Blue Background */
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border: 3px solid #C59D3B; /* Gold Border */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.card:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Image Styling */
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 3px solid #C59D3B; /* Gold Border */
+}
+
+/* Card Content */
+.card-content {
+    padding: 15px;
+    color: white;
+}
+
+/* Title */
+.card-content h3 {
+    margin-top: 5px;
+    color: #C59D3B; /* Gold */
+    font-size: 1.4rem;
+}
+
+/* Description */
+.card-content p {
+    font-size: 1rem;
+    color: #F1E3C6; /* Light Beige for readability */
+}
+
+/* Responsive: Adjust for smaller screens */
+@media (max-width: 1024px) {
+    .card {
+        width: 45%; /* 2 cards per row on tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%; /* 1 card per row on small screens */
+    }
+}
+
+
+/* About Section */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    background: #1F3B63; /* Light background for contrast */
+}
+
+.about img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-text {
+    max-width: 500px;
+    text-align: left;
+    color: #F8F9FA; /* Dark blue text */
+}
+
+/* Container for Skills & Hobbies */
+.skills-hobbies-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Space between sections */
+    padding: 40px;
+    background: #1F3B63; /* Match theme */
+}
+
+/* Skills and Hobbies Section */
+.skills, .hobbies {
+    flex: 1; /* Make them equal width */
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* Skills Section */
+.skills {
+    background: #1F3B63; /* Dark blue */
+    color: white;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Hobbies Section */
+.hobbies {
+    background: #F8F9FA; /* Light background */
+    color: #1F3B63; /* Dark blue text */
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* List Styling */
+.skills ul, .hobbies ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #F1E3C6; /* Beige text for contrast */
+}
+.hobbies li{
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #1F3B63; /* Beige text for contrast */
+}
+
+/* Responsive: Stack on smaller screens */
+@media (max-width: 768px) {
+    .skills-hobbies-container {
+        flex-direction: column; /* Stack vertically on small screens */
+        align-items: center;
+    }
+
+    .skills, .hobbies {
+        max-width: 100%;
+    }
+}
+
+.mentorship {
+    text-align: center;
+    padding: 50px;
+    background: white;
+}
+
+.mentorship h2 {
+    font-size: 2.5rem;
+    color: #1F3B63; /* Dark Blue */
+    margin-bottom: 40px;
+}
+
+/* Mentor Container */
+.mentor {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 3px solid #C59D3B; /* Gold Outline */
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    background: #1F3B63; /* Dark Blue */
+    color: white;
+}
+
+.mentor img {
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #C59D3B; /* Gold Border */
+}
+
+/* Mentor Text */
+.mentor-text {
+    text-align: left;
+    width: 55%;
+}
+
+.mentor-text h3 {
+    font-size: 1.8rem;
+    color: #C59D3B; /* Gold */
+    margin-bottom: 10px;
+}
+
+.mentor-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+    opacity: 0.9;
+}
+
+/* Alternating Layout */
+.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .mentor {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .mentor img {
+        width: 80%;
+    }
+
+    .mentor-text {
+        width: 100%;
+    }
+}
+
+
