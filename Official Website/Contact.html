@@ -38,7 +38,8 @@
     </div>
       
 
-    <form action="https://formspree.io/f/xeoalrar" method="POST" class="contact-form">
+
+<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
         <label for="name">Client Name</label>
         <input type="text" id="name" name="name" required>
         
@@ -46,14 +47,17 @@
         <input type="email" id="email" name="email" required>
         
         <label for="subject">Subject</label>
-        <input type="text" id="subject" name="subject" value="Arduino Project Proposal - Need My Service" required>
+        <select id="subject" name="subject" required>
+            <option value="Arduino Project Proposal - Need My Service">Arduino Project Proposal - Need My Service</option>
+            <option value="General Inquiry">General Inquiry</option>
+            <option value="Other">Other (Please specify in message)</option>
+        </select>
         
         <label for="message">Message</label>
         <textarea id="message" name="message" rows="5" required></textarea>
         
         <button type="submit">Send Message</button>
     </form>
-
     
 
 
