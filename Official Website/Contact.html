@@ -37,42 +37,27 @@
         </div>
     </div>
       
-      <section class="trailer">
-        <div class="trailer-item" onclick="location.href='Projects.html'">
-            <h2>Projects</h2>
-            <p>Explore my journey in robotics and innovation.</p>
-        </div>
-    
-        <div class="trailer-item" onclick="location.href='Legacy.html'">
-            <h2>Legacy</h2>
-            <p>See the impact of my work and experiences.</p>
-        </div>
-    
-        <div class="trailer-item" onclick="location.href='#odyssey'">
-            <h2>Odyssey</h2>
-            <p>Follow my path through international challenges and discoveries.</p>
-        </div>
-    
-        <div class="trailer-item" onclick="location.href='Contact.html'">
-            <h2>Contact</h2>
-            <p>Let's connect and collaborate!</p>
-        </div>
-    </section>
-    
+
+    <form action="https://formspree.io/f/xeoalrar" method="POST" class="contact-form">
+        <label for="name">Client Name</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" value="Arduino Project Proposal - Need My Service" required>
+        
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        
+        <button type="submit">Send Message</button>
+    </form>
 
     
 
 
-    <!-- <div class="custom-section">
-        <div class="custom-box left">
-            <p class="text">Your paragraph text</p>
-            <img src="Picture\pic_1.jpg" alt="Image" class="box-image">
-        </div>
-        <div class="custom-box right">
-            <img src="Picture\images.jpg" alt="Image" class="box-image">
-            <p class="text">Your paragraph text</p>
-        </div>
-    </div> -->
+
 
 </body>
 </html>
